@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body class="montserrat-font">
+    <header id="header-container">
+        <div class="logo">
+            <img src="./assets/1-removebg-preview.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="./assets/Cópia de Meu Currículo Dev.pdf" download>Curriculo</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+    </header>
+    <main class="content">
+        <div class="typed-text" id="home">
+            <h1>Bem-vindo(a) ao meu Portfolio!</h1>
+            <p>Meu nome é Milena, tenho 25 anos e <span id="text"></span></p>
+        </div>
+        <section id="sobre">
+            <div class="about-container">
+                <h2>Sobre mim</h2>
+                <p>Depois de me formar em administração e trabalhar durante 2 anos com recursos
+                    humanos
+                    decidi me mudar de cidade, e vim morar no interior de São Paulo. Porém ao ingressar novamente no mercado de
+                    trabalho,
+                    não obtive sucesso na área em que eu atuava anteriormente. Foi então que decidi migrar para tecnologia.
+                    E a partir daí começei a estudar programação e me apaixonei por essa área.
+                    Recentemente concluí o curso de Desenvolvimento Web Full Stack na Trybe. Aprendi a desenvolver aplicações web
+                    utilizando javascript, react, node, express, entre outras tecnologias.
+                    E estou em busca de uma oportunidade para ingressar no mercado de trabalho como desenvolvedora web.
+                </p>
+                <p>Durante 1 ano de aprendizados pude desenvolver diversas habilidades, tais como:</p>
+            </div>
+            <div class="skills">
+                <div class="softskills">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <div class="skill-name"> 🗣  Comunicação</div>
+                        <div class="progress-bar" id="communication-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"> 👥 Trabalho em equipe</div>
+                        <div class="progress-bar" id="teamwork-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"> 🤝  Resolução de problemas</div>
+                        <div class="progress-bar" id="problem-resolution-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"> ✔  Proatividade</div>
+                        <div class="progress-bar" id="proactivity-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"> ⌚  Gestão do tempo</div>
+                        <div class="progress-bar" id="time-bar"></div>
+                    </div>
+                </div>
+                <div class="hardskills">
+                    <h3>Hard Skills</h3>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="html"></div>
+                        <div class="progress-bar" id="html-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="css"></div>
+                        <div class="progress-bar" id="css-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript"></div>
+                        <div class="progress-bar" id="js-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TS"></div>
+                        <div class="progress-bar" id="ts-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="node"></div>
+                        <div class="progress-bar" id="node-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="python"></div>
+                        <div class="progress-bar" id="python-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"></div>
+                        <div class="progress-bar" id="c#-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react"></div>
+                        <div class="progress-bar" id="react-bar"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="sql"></div>
+                        <div class="progress-bar" id="sql-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="card">
+                        <img src="./C/1.png" alt="Imagem 1">
+                        <div class="card-content">
+                            <h2>TrybeTunes</h2>
+                            <p>Página web de música, em que é possivel pesquisar, filtrar e favoritar musicas.
+                                Projeto desenvolvido utilizando React, React Router e Redux.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="Imagem 2">
+                        <div class="card-content">
+                            <h2>Título do Card 2</h2>
+                            <p>Breve descrição do card 2.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="Imagem 2">
+                        <div class="card-content">
+                            <h2>Título do Card 2</h2>
+                            <p>Breve descrição do card 2.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="Imagem 2">
+                        <div class="card-content">
+                            <h2>Título do Card 2</h2>
+                            <p>Breve descrição do card 2.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="Imagem 2">
+                        <div class="card-content">
+                            <h2><a href="">Título do Card 2</a></h2>
+                            <p>Breve descrição do card 2.</p>
+                        </div>
+                    </div>
+                    <!-- Adicione mais cards conforme necessário -->
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para me encontrar, acesse minhas redes: 
+                <br>
+                <br>
+                <a href="https://www.linkedin.com/in/milena-dev/" target="_blank">
+                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">
+                </a>
+                <a href="https://github.com/milena-cordeiro">
+                    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github">
+                </a>
+                <br>
+                <br>
+                Caso preferir,<a href="mailto:mcs9823@gmail.com">clique aqui para me envair um e-mail 📧 </a>
+                <br>
+                <br>
+                Ou entre em contato pelo whatsapp ⬇  
+                <br>
+                <br>
+                <a href="https://wa.me/5511966926572/?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20com%20você." target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt=""></a>
+                <br>
+                <br>
+                Será um prazer conversar com você! 😊
+            </p>
+    </main>
+    <footer>
+        <p>&copy; 2024. Feito com ❤ por Milena Cordeiro</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

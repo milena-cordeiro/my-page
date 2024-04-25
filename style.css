@@ -1,0 +1,143 @@
+header {
+    display: flex;
+    background-color:  #523e27; /* cor de fundo do header */
+    padding: 10px 20px; /* espaçamento interno do header */
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+   flex: 1; /* Faz com que a logo ocupe o máximo de espaço possível */
+}
+
+.logo img {
+    max-width: 200px; /* Define a largura máxima da logo */
+    height: auto; /* Define a altura máxima da logo */
+}
+
+.about-container {
+    padding: 20px 10px 10px; 
+    margin: 10px;
+    margin: 50px;
+}
+
+nav {
+    display: 1;
+    font-size: 1.2em; /* tamanho da fonte dos links */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f9bf3b; /* cor do texto dos links */
+    padding: 10px 20px; /* espaçamento interno dos links */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* cor de fundo dos links ao passar o mouse */
+}
+
+.nav ul li:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita do último item */
+}
+
+.content{
+    padding-top: 5%; /* ajuste o valor conforme necessário para o tamanho do seu header */
+}
+#projetos {
+    margin: 50px;
+    border-radius: 10px;
+    background-color: #ce69579f;
+    color: #523e27;
+    padding: 20px;
+}
+.typed-text {
+    font-size: 1.5em;
+    color: #523e27;
+    text-align: center;
+}
+
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.softskills, .hardskills{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px;
+}
+
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ce6857;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    text-decoration: none;
+    display: flex; /* Permite que os slides sejam dispostos lado a lado */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    flex: 0 0 auto; /* Os slides não crescem nem encolhem */
+    width: 200px; /* Largura de cada card */
+    border: 1px solid #523e27; /* Borda do card */
+    border-radius: 5px; /* Cantos arredondados do card */
+    margin-right: 20px; /* Espaçamento entre os cards */
+}
+
+.card img {
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    height: auto; /* A altura da imagem é ajustada automaticamente para manter a proporção */
+}
+
+.card-content {
+    text-decoration: none;
+    padding: 20px; /* Espaçamento interno do conteúdo do card */
+}
+
+#contato {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+}
+
+footer {
+    background-color: #523e27;
+    color: #f9bf3b;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Animation</title>
+  <style>
+    #text {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      border-right: 2px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="text"></div>
+
+  <script>
+    const phrases = [
+      "Meu nome é Milena, tenho 25 anos e sou ",
+      "aspirante a programadora.",
+      "apaixonada por animais.",
+      "amante de música boa e livros.",
+      "caidinha por comida boa."
+    ];
+
+    let index = 0;
+    let isDeleting = false;
+    let text = '';
+    let speed = 100;
+
+    function type() {
+      const currentPhrase = phrases[index];
+      
+      if (!isDeleting) {
+        text = currentPhrase.substring(0, text.length + 1);
+      } else {
+        text = currentPhrase.substring(0, text.length - 1);
+      }
+      
+      document.getElementById('text').innerHTML = text;
+      
+      let delta = 100;
+      if (isDeleting) {
+        delta /= 2;
+      }
+      
+      if (!isDeleting && text === currentPhrase) {
+        delta = 1500;
+        isDeleting = true;
+      } else if (isDeleting && text === '') {
+        isDeleting = false;
+        index = (index + 1) % phrases.length;
+      }
+      
+      setTimeout(type, delta);
+    }
+
+    setTimeout(type, 500);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
